@@ -1,0 +1,33 @@
+{
+  "name": "property-pulse",
+  "version": "1.0.0",
+  "description": "AI-Powered Real Estate Platform",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "build": "npm run build:server && npm run build:client",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm run preview"
+  },
+  "keywords": [
+    "real-estate",
+    "ai",
+    "property",
+    "react",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
