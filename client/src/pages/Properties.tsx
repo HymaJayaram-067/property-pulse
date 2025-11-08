@@ -3,7 +3,6 @@ import { useProperties } from '../hooks/useProperties';
 import PropertyList from '../components/properties/PropertyList';
 import AISearchBar from '../components/properties/AISearchBar';
 import LoadingSpinner from '../components/common/LoadingSpinner';
-import { PropertyFilters } from '../types';
 
 const Properties = () => {
   const [aiResults, setAiResults] = useState<any>(null);

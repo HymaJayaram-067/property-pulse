@@ -1,5 +1,5 @@
 import { Request } from 'express';
-import { Document } from 'mongoose';
+import { Document, Types } from 'mongoose';
 
 // User Types
 export interface IUser extends Document {
@@ -33,7 +33,7 @@ export interface IProperty extends Document {
   propertyType: 'house' | 'apartment' | 'condo' | 'land' | 'commercial';
   status: 'for-sale' | 'sold' | 'rented';
   images: string[];
-  owner: string;
+  owner: Types.ObjectId | string;
   createdAt: Date;
   updatedAt: Date;
 }

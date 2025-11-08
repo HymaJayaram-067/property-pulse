@@ -1,4 +1,4 @@
-import mongoose, { Schema } from 'mongoose';
+import mongoose, { Schema, Types } from 'mongoose';
 import { IProperty } from '../types';
 
 const propertySchema = new Schema<IProperty>(

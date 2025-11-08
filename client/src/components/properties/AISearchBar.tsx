@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { FaSearch, FaRobot } from 'react-icons/fa';
 import { propertyService } from '../../services/propertyService';
-import LoadingSpinner from '../common/LoadingSpinner';
 
 interface AISearchBarProps {
   onSearchResults: (results: any) => void;

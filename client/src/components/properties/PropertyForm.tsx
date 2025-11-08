@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { PropertyFormData, Property } from '../../types';
 import { propertyService } from '../../services/propertyService';
