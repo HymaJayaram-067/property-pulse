@@ -15,7 +15,7 @@ This guide covers deploying the Property Pulse application using free hosting se
 - Vercel account
 - MongoDB Atlas account
 - Cloudinary account
-- OpenAI API key
+- Grok API key
 
 ## Step 1: Prepare Repository
 
@@ -66,7 +66,7 @@ In Render dashboard, add these environment variables:
 PORT=5000
 MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/property-pulse
 JWT_SECRET=your_secure_random_string_min_32_characters
-OPENAI_API_KEY=sk-your-openai-api-key
+GROK_API_KEY=your_grok_api_key
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
@@ -164,13 +164,15 @@ Replace with your actual Render backend URL.
    - API Secret
 3. Add to Render environment variables
 
-## Step 6: Configure OpenAI
+## Step 6: Configure Grok API
 
-1. Go to [OpenAI Platform](https://platform.openai.com/)
-2. Navigate to API Keys
-3. Create new secret key
-4. Add to Render environment variables as `OPENAI_API_KEY`
-5. Set up billing and usage limits
+1. Go to [xAI Console](https://console.x.ai/)
+2. Create an account or sign in
+3. Navigate to API Keys section
+4. Create new API key
+5. Add to Render environment variables as `GROK_API_KEY`
+
+**Note**: Grok API is free to use - no billing setup required!
 
 ## Step 7: Update CORS Settings
 
@@ -395,7 +397,7 @@ jobs:
 - [Vercel Documentation](https://vercel.com/docs)
 - [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
 - [Cloudinary Documentation](https://cloudinary.com/documentation)
-- [OpenAI API Documentation](https://platform.openai.com/docs)
+- [Grok API Documentation](https://docs.x.ai/)
 
 ## Estimated Costs
 
@@ -405,21 +407,21 @@ jobs:
 - **Vercel**: 100GB bandwidth/month
 - **MongoDB Atlas**: 512MB storage
 - **Cloudinary**: 25GB storage, 25GB bandwidth
-- **OpenAI**: Pay per use (no free tier)
+- **Grok API**: Free to use with generous rate limits
 
 ### Expected Monthly Costs
 
 For small to medium traffic:
-- OpenAI: $10-50 (varies with usage)
+- Grok API: $0 (free)
 - Other services: $0 (free tier)
 
-**Total**: ~$10-50/month
+**Total**: $0/month
 
 For production with upgrades:
 - Render: $7-25
 - Vercel: $20
 - MongoDB: $9-57
 - Cloudinary: $89
-- OpenAI: $50-200
+- Grok API: $0 (free)
 
-**Total**: ~$175-391/month
+**Total**: ~$125-191/month

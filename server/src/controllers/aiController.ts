@@ -3,7 +3,7 @@ import {
   naturalLanguageSearch,
   generatePropertyDescription,
   getAIRecommendations,
-} from '../services/openaiService';
+} from '../services/grokService';
 import { AuthRequest } from '../types';
 
 // Natural language property search

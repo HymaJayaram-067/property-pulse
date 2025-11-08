@@ -7,7 +7,7 @@ Before you begin, ensure you have the following installed:
 - npm or yarn
 - MongoDB (local or MongoDB Atlas account)
 - Cloudinary account (for image uploads)
-- OpenAI API key (for AI features)
+- Grok API key (for AI features)
 
 ## Installation
 
@@ -58,7 +58,7 @@ Edit the `.env` file with your credentials:
 PORT=5000
 MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/property-pulse
 JWT_SECRET=your_secure_jwt_secret_key_min_32_characters
-OPENAI_API_KEY=sk-your-openai-api-key
+GROK_API_KEY=your_grok_api_key
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
@@ -111,15 +111,15 @@ VITE_API_URL=http://localhost:5000/api
 4. Copy your Cloud Name, API Key, and API Secret
 5. Update the Cloudinary variables in server `.env`
 
-### 6. OpenAI API Setup
+### 6. Grok API Setup
 
-1. Go to [OpenAI Platform](https://platform.openai.com/)
+1. Go to [xAI Console](https://console.x.ai/)
 2. Create an account or sign in
 3. Navigate to API Keys section
 4. Create a new API key
-5. Update `OPENAI_API_KEY` in server `.env`
+5. Update `GROK_API_KEY` in server `.env`
 
-**Note**: OpenAI API usage incurs costs. Make sure to set up billing and monitor usage.
+**Note**: Grok API is free to use with generous rate limits. No billing setup required!
 
 ## Running the Application
 
@@ -230,7 +230,7 @@ lsof -ti:3000 | xargs kill -9
 - Check file size (max 5MB)
 - Ensure file is an image format
 
-#### OpenAI API Error
+#### Grok API Error
 
 - Verify API key is valid
 - Check you have available credits

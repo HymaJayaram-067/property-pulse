@@ -6,7 +6,7 @@
 [![Node Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue)](https://www.typescriptlang.org/)
 
-Property Pulse is a modern, full-stack real estate platform that leverages AI to revolutionize property search and listing management. Built with React, Node.js, and OpenAI, it offers natural language search, automated property descriptions, and intelligent recommendations.
+Property Pulse is a modern, full-stack real estate platform that leverages AI to revolutionize property search and listing management. Built with React, Node.js, and Grok AI, it offers natural language search, automated property descriptions, and intelligent recommendations.
 
 ![Property Pulse Banner](https://via.placeholder.com/1200x400/0ea5e9/ffffff?text=Property+Pulse+-+AI-Powered+Real+Estate)
 
@@ -54,7 +54,7 @@ Property Pulse is a modern, full-stack real estate platform that leverages AI to
 - **MongoDB & Mongoose** - Database and ODM
 - **JWT** - Authentication
 - **Bcrypt** - Password hashing
-- **OpenAI API** - AI features
+- **Grok AI API** - AI features
 - **Cloudinary** - Image hosting
 - **Multer** - File uploads
 - **Express Validator** - Input validation
@@ -66,7 +66,7 @@ Before you begin, ensure you have:
 - npm or yarn
 - MongoDB (local or MongoDB Atlas account)
 - Cloudinary account
-- OpenAI API key
+- Grok AI API key
 
 ## 🚀 Quick Start
 
@@ -97,7 +97,7 @@ Edit `server/.env`:
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key_min_32_characters
-OPENAI_API_KEY=your_openai_api_key
+GROK_API_KEY=your_grok_api_key
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
@@ -268,7 +268,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- OpenAI for the GPT API
+- Grok AI for the GPT API
 - Cloudinary for image hosting
 - MongoDB Atlas for database hosting
 - The open-source community
